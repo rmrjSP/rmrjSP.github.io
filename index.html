@@ -85,7 +85,7 @@
 
     submitButton.addEventListener('click', function(e){
         let guess = textBox.value;
-        if (guess.length >6){
+        if (guess.length >7){
             return //don't accept words that aren't 5 letters long
         }
         //clear the textbox once you hit submit
@@ -138,7 +138,7 @@
     function buildMatchArray(guess){
         guess = guess.toUpperCase();
         let answerAsArray = [];
-        let matchArray = [0, 0, 0, 0, 0]; //assume no match to start
+        let matchArray = [0, 0, 0, 0, 0,0]; //assume no match to start
         for (let i=0; i < randomAnswer.length; i++){
             let letter = randomAnswer[i].toUpperCase();
             answerAsArray.push(letter);
